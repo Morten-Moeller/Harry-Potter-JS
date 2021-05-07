@@ -1,3 +1,19 @@
 .nav-mobile {
+  position: fixed;
+  bottom: 0;
+}
+
+.nav-mobile__list {
   background: var(--color-gray-light);
+  list-style-type: none;
+  width: 100%;
+}
+
+.nav-mobile__dropdown {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: var(--color-white);
 }
