@@ -1,5 +1,5 @@
 export default function setupNavigation() {
-  const nav = document.querySelector('[data-nav-mobile]')
+  //   const nav = document.querySelector('[data-nav-mobile]')
   const reset = document.querySelector('[data-nav-reset]')
 
   setupReset(reset)
