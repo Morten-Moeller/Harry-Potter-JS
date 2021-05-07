@@ -1,6 +1,5 @@
 export default function renderCard(cardData) {
   const { name, image, species, gender, house } = cardData
-  console.log('i am alive')
   const container = document.querySelector('[data-main]')
   const houseClass =
     house === 'Gryffindor'
