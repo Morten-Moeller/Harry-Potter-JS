@@ -1,3 +1,3 @@
-import AppHeader from './components/AppHeader'
+import fetchAllData from './utils/fetchAllData'
 
-document.body.append(AppHeader('JavaScript App Template'))
+fetchAllData()
