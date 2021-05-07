@@ -4,7 +4,8 @@
 }
 
 body {
-  background-color: var(--color-gray-dark);
+  background-image: linear-gradient(to right, #434343 0%, rgb(50, 51, 57) 100%);
+  background-blend-mode: multiply, multiply;
   color: var(--color-black);
   font-family: 'Libre Baskerville', sans-serif;
   font-size: 112.5%;
