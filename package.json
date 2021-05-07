@@ -50,8 +50,11 @@
   "license": "ISC",
   "author": "",
   "contributors": [
-    "Lene Frei",
-    "Jerry Erbs"
+    "Morten Möller",
+    "Frederike Bründermann",
+    "Pascal Weber",
+    "Christian Zintel",
+    "Dajana Jozanovic"
   ],
   "description": "## Template usage",
   "main": ".eslintrc.js",
