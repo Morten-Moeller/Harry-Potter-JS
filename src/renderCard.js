@@ -1,7 +1,7 @@
-export default function renderCard(card) {
-  const { name, image, wand, species, gender, house } = card
-
-  const container = document.querySelector('data-main')
+export default function renderCard(cardData) {
+  const { name, image, wand, species, gender, house } = cardData
+  console.log('i am alive')
+  const container = document.querySelector('[data-main]')
   const cardCanvas = document.createElement('div')
 
   cardCanvas.innerHTML = `
@@ -14,5 +14,5 @@ export default function renderCard(card) {
     </ul>
     <div>Wand: <p>${wand}</p></div>
     `
-  container.append(card)
+  container.append(cardCanvas)
 }

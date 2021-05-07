@@ -1,3 +1,9 @@
 import fetchAllData from './utils/fetchAllData'
+import renderAllCards from './renderAllCards'
 
-fetchAllData()
+// let cardArray
+
+fetchAllData().then(data => {
+  //   cardArray = data
+  renderAllCards(data)
+})
