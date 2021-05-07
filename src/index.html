@@ -16,27 +16,26 @@
   <body>
     <header class="app-header">
       <h1 data-header>Harry Potter-App</h1>
+      <nav>
+        <div data-nav-mobile class="nav-mobile">
+          <a id="nav-mobile__toggle" href="#!"><span></span></a>
+        </div>
+        <ul class="nav-mobile__list">
+          <li><a data-nav-reset href="#!">Reset filter</a></li>
+          <li>
+            <a href="#!">Filter by House</a>
+            <ul class="nav-mobile__dropdown">
+              <li><a data-nav-house="Gryffindor" href="#!">Gryffindor</a></li>
+              <li><a data-nav-house="Slytherin" href="#!">Slytherin</a></li>
+              <li><a data-nav-house="Hufflepuff" href="#!">Hufflepuff</a></li>
+              <li><a data-nav-house="Ravenclaw" href="#!">Ravenclaw</a></li>
+              <li><a data-nav-house="No House" href="#!">No House</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
     </header>
 
     <main data-main class="app-main"></main>
-
-    <nav>
-      <div data-nav-mobile class="nav-mobile">
-        <a id="nav-mobile__toggle" href="#!"><span></span></a>
-      </div>
-      <ul class="nav-mobile__list">
-        <li><a data-nav-reset href="#!">Reset filter</a></li>
-        <li>
-          <a href="#!">Filter by House</a>
-          <ul class="nav-mobile__dropdown">
-            <li><a data-nav-house="Gryffindor" href="#!">Gryffindor</a></li>
-            <li><a data-nav-house="Slytherin" href="#!">Slytherin</a></li>
-            <li><a data-nav-house="Hufflepuff" href="#!">Hufflepuff</a></li>
-            <li><a data-nav-house="Ravenclaw" href="#!">Ravenclaw</a></li>
-            <li><a data-nav-house="No House" href="#!">No House</a></li>
-          </ul>
-        </li>
-      </ul>
-    </nav>
   </body>
 </html>
