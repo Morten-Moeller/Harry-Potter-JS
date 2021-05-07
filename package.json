@@ -50,11 +50,20 @@
   "license": "ISC",
   "author": "",
   "contributors": [
-    {
-      "name": "Lene Frei"
-    },
-    {
-      "name": "Jerry Erbs"
-    }
-  ]
+    "Morten Möller",
+    "Frederike Bründermann",
+    "Pascal Weber",
+    "Christian Zintel",
+    "Dajana Jozanovic"
+  ],
+  "description": "## Template usage",
+  "main": ".eslintrc.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Morten-Moeller/Harry-Potter-JS.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Morten-Moeller/Harry-Potter-JS/issues"
+  },
+  "homepage": "https://github.com/Morten-Moeller/Harry-Potter-JS#readme"
 }
