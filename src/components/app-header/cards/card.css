@@ -1,0 +1,45 @@
+.card {
+  display: grid;
+  gap: 20px;
+  background-color: lightgray;
+  max-width: 300px;
+  padding: 20px;
+  margin-bottom: 40px;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(78, 78, 78, 0.15);
+}
+
+.card--gryffindor {
+  background-color: var(--color-gryffindor-1);
+  color: var(--color-white);
+}
+
+.card--slytherin {
+  background-color: var(--color-slytherin-2);
+  color: var(--color-white);
+}
+
+.card--hufflepuff {
+  background-color: var(--color-hufflepuff-2);
+  color: var(--color-black);
+}
+
+.card--ravenclaw {
+  background-color: var(--color-ravenclaw-2);
+  color: var(--color-white);
+}
+
+.card--nohouse {
+  background-color: var(--color-ravenclaw-2);
+  color: var(--color-white);
+}
+
+.card__image {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.card__list {
+  margin-left: -20px;
+}
