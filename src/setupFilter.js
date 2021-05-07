@@ -2,7 +2,7 @@ import renderAllCards from './renderAllCards'
 import filterHouse from './filterHouse'
 
 export default function setupFilter(array, identifier = 'all') {
-  console.log(identifier)
+  const main = document.querySelector('[data-main]')
   switch (identifier) {
     case 'Gryffindor':
       filterHouse('Gryffindor', array)
@@ -20,6 +20,7 @@ export default function setupFilter(array, identifier = 'all') {
       filterHouse('No-House', array)
       break
     default:
+      main.innerHTML = ''
       renderAllCards(array)
   }
 }
