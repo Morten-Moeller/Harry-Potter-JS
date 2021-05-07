@@ -2,23 +2,22 @@ import renderAllCards from './renderAllCards'
 import filterHouse from './filterHouse'
 
 export default function setupFilter(array, identifier = 'all') {
-  const main = document.querySelector('[data-main]')
-  main.innerHTML = ''
+  console.log(identifier)
   switch (identifier) {
     case 'Gryffindor':
-      filterHouse('Gryffindor')
+      filterHouse('Gryffindor', array)
       break
     case 'Slytherin':
-      filterHouse('Slytherin')
+      filterHouse('Slytherin', array)
       break
     case 'Hufflepuff':
-      filterHouse('Hufflepuff')
+      filterHouse('Hufflepuff', array)
       break
     case 'Ravenclaw':
-      filterHouse('Ravenclaw')
+      filterHouse('Ravenclaw', array)
       break
-    case 'No House':
-      filterHouse('No House')
+    case 'No-House':
+      filterHouse('No-House', array)
       break
     default:
       renderAllCards(array)

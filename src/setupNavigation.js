@@ -1,29 +1,28 @@
 import setupFilter from './setupFilter'
 
-export default function setupNavigation() {
+export default function setupNavigation(array) {
   //   const nav = document.querySelector('[data-nav-mobile]')
   const reset = document.querySelector('[data-nav-reset]')
 
-  setupReset(reset)
-  setupFilterHouse()
+  setupReset(reset, array)
+  setupFilterHouse(array)
 }
 
-function setupReset(reset) {
+function setupReset(reset, array) {
   reset.addEventListener('click', e => {
     e.preventDefault()
-    setupFilter('All')
+    setupFilter(array, 'All')
   })
 }
 
-function setupFilterHouse() {
+function setupFilterHouse(array) {
+  const cardArray = array
   const buttons = document.querySelectorAll('[data-nav-house]')
-  buttons.forEach(setupButton)
-}
-
-function setupButton(button) {
-  button.addEventListener('click', e => {
-    e.preventDefault()
-    const buttonName = button.dataset.navHouse.value
-    setupFilter(buttonName)
+  buttons.forEach(button => {
+    button.addEventListener('click', e => {
+      e.preventDefault()
+      const buttonName = button.dataset.navHouse
+      setupFilter(cardArray, buttonName)
+    })
   })
 }
