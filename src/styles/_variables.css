@@ -1,7 +1,9 @@
 :root {
   --color-white: white;
   --color-black: black;
-  --color-primary: #0d0d0d;
+  --color-primary: #f2b035;
+  --color-gray-dark: #212026;
+  --color-gray-light: #444350;
   --color-gryffindor-1: #a60311;
   --color-gryffindor-2: #d99b29;
   --color-gryffindor-3: #f2b035;
