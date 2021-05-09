@@ -1,3 +1,43 @@
 .nav-mobile {
   background: var(--color-gray-light);
 }
+
+h1 {
+  color: var(--color-primary);
+}
+
+ul {
+  list-style: none;
+}
+
+li {
+  margin: 15px;
+}
+
+li > a {
+  background-color: var(--color-primary);
+  border-radius: 5px;
+  padding: 7px;
+  color: white;
+  text-decoration: none;
+}
+
+.slytherin {
+  background-color: var(--color-slytherin-2);
+}
+
+.hufflepuff {
+  background-color: var(--color-hufflepuff-2);
+}
+
+.ravenclaw {
+  background-color: var(--color-ravenclaw-2);
+}
+
+.gryffindor {
+  background-color: var(--color-gryffindor-1);
+}
+
+.no-house {
+  background-color: var(--color-gray-light);
+}

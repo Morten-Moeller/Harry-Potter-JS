@@ -1,4 +1,5 @@
 import setupFilter from './setupFilter'
+import filterAge from './filterAge'
 
 export default function setupNavigation(array) {
   //   const nav = document.querySelector('[data-nav-mobile]')
@@ -6,6 +7,7 @@ export default function setupNavigation(array) {
 
   setupReset(reset, array)
   setupFilterHouse(array)
+  setupCurrentAge(array)
 }
 
 function setupReset(reset, array) {
@@ -24,5 +26,12 @@ function setupFilterHouse(array) {
       const buttonName = button.dataset.navHouse
       setupFilter(cardArray, buttonName)
     })
+  })
+}
+
+function setupCurrentAge(array) {
+  const buttonAge = document.querySelector('[data-nav-age]')
+  buttonAge.addEventListener('click', () => {
+    filterAge(array)
   })
 }

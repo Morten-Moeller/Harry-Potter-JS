@@ -6,27 +6,31 @@
   padding: 20px;
   margin-bottom: 40px;
   border-radius: 10px;
-  box-shadow: 0 5px 15px rgba(78, 78, 78, 0.15);
+  box-shadow: 2px 7px 10px rgba(255, 255, 255, 0.15);
 }
 
 .card--gryffindor {
   background-color: var(--color-gryffindor-1);
   color: var(--color-white);
+  box-shadow: 2px 7px 10px rgba(249, 17, 17, 0.2);
 }
 
 .card--slytherin {
   background-color: var(--color-slytherin-2);
   color: var(--color-white);
+  box-shadow: 2px 7px 10px rgba(17, 249, 17, 0.15);
 }
 
 .card--hufflepuff {
   background-color: var(--color-hufflepuff-2);
   color: var(--color-black);
+  box-shadow: 2px 7px 10px rgba(249, 214, 17, 0.15);
 }
 
 .card--ravenclaw {
   background-color: var(--color-ravenclaw-2);
   color: var(--color-white);
+  box-shadow: 2px 7px 10px rgba(17, 121, 249, 0.15);
 }
 
 .card--nohouse {

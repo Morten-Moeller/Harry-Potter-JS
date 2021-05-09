@@ -1,5 +1,5 @@
 export default function renderCard(cardData) {
-  const { name, image, species, gender, house } = cardData
+  const { name, image, species, gender, house, age } = cardData
   const container = document.querySelector('[data-main]')
   const houseClass =
     house === 'Gryffindor'
@@ -18,8 +18,9 @@ export default function renderCard(cardData) {
     <ul class="card__list">
         <li class="card__list--item">${species}</li>
         <li class="card__list--item">${gender}</li>
-        <li class="card__list--item">${house}</li>
+        ${age ? `<li class="card__list--item">Age today: ${age}</li>` : ''}
     </ul>`
+
   cardCanvas.classList.add('card')
   cardCanvas.classList.add(houseClass)
   container.append(cardCanvas)
